@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="warungtrex.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+        <a href="#"><img src="png-clipart-drawing-graphy-logo-rumah-makan-logo-illustrator.png" class="logo" ></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>WARUNG PORSI<br><span>T-REX</span></h2>
+                <p>
+                    <b><br>"Pengen makan enak, tapi kantong lagi tipis? Cobain WARUNG PORSI T-REX makan enak,porsi banyak dan gak bikin dompet nangis!"</b></p>
+                <a href="#">Learn More</a>
+        </div>
+        <div class="imgBox">
+            <img src="079979700_1587487794-Sajiku_1-removebg-preview.png" class="starbuceks">
+        </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="011633_666x468-removebg-preview.png" onclick="imgSlider('011633_666x468-removebg-preview.png');changeCircleColor('#2F2B29')"></li>
+            <li><img src="079979700_1587487794-Sajiku_1-removebg-preview.png" onclick="imgSlider('079979700_1587487794-Sajiku_1-removebg-preview.png');changeCircleColor('#6D3431')"></li>
+            <li><img src="Mie-ayam-removebg-preview.png"onclick="imgSlider('Mie-ayam-removebg-preview.png');changeCircleColor('#2F4C2D')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbuceks').src =anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background =color;
+        }
+    </script>
+</body>
+</html>
